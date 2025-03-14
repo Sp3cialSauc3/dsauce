@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background-texture.jpg'); /* Replace with your image file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+/* Black overlay with 60% opacity */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.left-sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    padding-right: 20px;
+}
+
+.name-title {
+    text-align: left;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.name-title h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.name-title .title {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #b266ff;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns buttons to the left */
+}
+
+.nav-button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    background-color: #777;
+    transform: scale(0.95);
+}
+
+/* Add an icon placeholder (e.g., home icon) - using Unicode for simplicity */
+.nav-button::before {
+    content: "🏠 ";
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-placeholder {
+    margin: 20px 0;
+}
+
+.image-placeholder img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
