@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background-texture.jpg'); /* Replace with your image file name */
+    background-image: url('images/background-texture.jpg'); /* Replace with your image file name */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
